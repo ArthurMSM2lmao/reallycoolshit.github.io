@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextBox Validation</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function checkText() {
+            var inputText = document.getElementById("inputBox").value;
+            var correctText = "NSFW";
+
+            if (inputText === correctText) {
+                window.location.href = "NSFWhub.html";
+            }
+
+            var inputText = document.getElementById("inputBox").value;
+            var correctText = "The Secret Word";
+
+            if (inputText === correctText) {
+                window.location.href = "Notsosecretlmao.html";
+            }
+
+            var inputText = document.getElementById("inputBox").value;
+            var correctText = "Wikipedia";
+
+            if (inputText === correctText) {
+                window.location.href = "https://www.wikipedia.org/";
+            }
+
+            var inputText = document.getElementById("inputBox").value;
+            var correctText = "Rule34";
+
+            if (inputText === correctText) {
+                window.location.href = "https://www.reddit.com/r/rule34/";
+            }
+            
+            var inputText = document.getElementById("inputBox").value;
+            var correctText = "Games";
+
+            if (inputText === correctText) {
+                window.location.href = "Games.html";
+            }
+
+            var inputText = document.getElementById("inputBox").value;
+            var correctText = "IP";
+
+            if (inputText === correctText) {
+                window.location.href = "GimmeIP.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter the Secret Word!</h1>
+        <input type="text" id="inputBox" placeholder="Type here">
+        <button onclick="checkText()">Submit</button>
+        <h3>Its case sensitive*</h3>
+    </div>
+</body>
+</html>
